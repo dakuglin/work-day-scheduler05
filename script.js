@@ -1,6 +1,9 @@
 
 $(document).ready(function() {   //goes in every jQuery script
     
+    //display current date in p tag on html
+    $('#currentDay').text(moment().format('MMMM Do YYYY'));
+
     var data = {
         
         hour9: "",
@@ -35,9 +38,6 @@ $(document).ready(function() {   //goes in every jQuery script
     $("#hour-4 .description").val(localStorage.getItem('hour-4'));
     $("#hour-5 .description").val(localStorage.getItem('hour-5'));
 
-
-    //display current date in p tag on html
-    $('#currentDay').text(moment().format('MMMM Do YYYY'));
 
     function timeblockColor() {
 
